@@ -1,10 +1,11 @@
 Jobs4TakeAway.org
+===============
 
-Information for remote.work.
+Website featuring remote.work.
 
 
 TODO:
-- publish on github
+
 - add translations
 - deploy bundle to docker on production server
 - configure ngingx on production server 
@@ -22,3 +23,4 @@ docker run -d \
 
 DONE
 - 2016-05-19 ported website to meteor 
+- 2016-05-19 publish on github 
