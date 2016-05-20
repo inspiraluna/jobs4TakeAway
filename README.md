@@ -1,17 +1,15 @@
 Jobs4TakeAway.org
 ===============
 
-Website featuring remote.work.
-
+website featuring remote.work.
 
 TODO:
-
-- add translations
 - deploy bundle to docker on production server
-- configure ngingx on production server 
+- configure ngingx on production server to forward wwww port to local port
 
 HOWTOS:
 - run docker with meteor bundle 
+
 ``
 docker run -d \
     -e ROOT_URL=http://yourapp.com \
@@ -21,8 +19,9 @@ docker run -d \
     -p 8080:80 \
     meteorhacks/meteord:base
 ``
-
+(see: https://github.com/meteorhacks/meteord)
 
 DONE
+- 2016-05-19 add translations https://github.com/TAPevents/tap-i18n#configuring-tap-i18n
 - 2016-05-19 ported website to meteor 
 - 2016-05-19 publish on github 

@@ -76,11 +76,10 @@
 					
 	        <div id="hero-rotator" class="mtphr-rotator apex-hero-element">
 	          <div class="mtphr-rotator-resource-container">
-	            <div class="mtphr-rotator-resource">Jobs4TakeAway.org - Arbeit zum Mitnehmen</div>
-	            <div class="mtphr-rotator-resource">Win-Win Situationen für Arbeitnehmer und Arbeitgeber</div>
-	            <div class="mtphr-rotator-resource">Prinzipumkehr:<b> 
-	            "Mensch folgt Arbeit" zu "Arbeit folgt Menschen"</b></div>
-	            <div class="mtphr-rotator-resource"><br>Wir ermutigen bevorzugt gemeinschaftliche Arbeitsräume <br> einer Arbeit im Home-Office vorziehen.</div>
+	            <div class="mtphr-rotator-resource">{{_ "rotator_title_1" }}</div>
+	            <div class="mtphr-rotator-resource">{{_ "rotator_title_2" }}</div>
+	            <div class="mtphr-rotator-resource">{{_ "rotator_title_3" }}</div>
+	            <div class="mtphr-rotator-resource">{{_ "rotator_title_4" }}</div>
 	          </div>
 				<div class="mtphr-rotator-navigation">
 					<a href="#0" rel="nofollow"><i class="apex-icon-circle"></i><i class="apex-icon-circle-blank"></i></a>
@@ -97,15 +96,15 @@
 					<!-- The hero menu -->
 	        <nav class="apex-hero-menu-container apex-hero-element">
 	          <ul class="clearfix">
-	          	 <li><a href="#anehmer"><i class="apex-icon-gear"></i>Arbeitnehmer</a></li>
-	          	  <li><a href="#ageber"><i class="apex-icon-speech-bubble-4"></i>Arbeitgeber</a></li>
-	          	   <li><a href="#kommunen"><i class="apex-icon-polaroid-1"></i>Kommunen</a></li>
+	          	 <li><a href="#anehmer"><i class="apex-icon-gear"></i>{{_ "nav_employees" }}</a></li>
+	          	  <li><a href="#ageber"><i class="apex-icon-speech-bubble-4"></i>{{_ "nav_employer" }}</a></li>
+	          	   <li><a href="#kommunen"><i class="apex-icon-polaroid-1"></i>{{_ "nav_municipality" }}</a></li>
 	          <!--  <li><a href="#about"><i class="apex-icon-gear"></i>Arbeit mitnehmen</a></li>
 	            <li><a href="#team"><i class="apex-icon-members"></i>Partner</a></li>
 	            <li><a href="#produkte"><i class="apex-icon-speech-bubble-4"></i>Produkte</a></li>
 	            <li><a href="#projekte"><i class="apex-icon-polaroid-1"></i>Projekte</a></li> 
 	            <li><a href="blog/"><i class="apex-icon-write"></i>Blog</a></li>-->
-	            <li><a href="#contact"><i class="apex-icon-plane-2"></i>Kontakt</a></li>
+	            <li><a href="#contact"><i class="apex-icon-plane-2"></i>{{_ "nav_contact" }}</a></li>
 	          </ul>
 	        </nav>
 	          
@@ -135,16 +134,16 @@
 				<!-- The primary menu -->
         <nav class="apex-primary-menu-container">
           <ul>
-            <li class="hidden-xs"><a href="index.html">Start</a></li>
-            <li><a href="#anehmer"><i class="apex-icon-gear"></i>Arbeitnehmer</a></li>
-            <li><a href="#ageber"><i class="apex-icon-gear"></i>Arbeitgeber</a></li>
-            <li><a href="#kommunen"><i class="apex-icon-gear"></i>Kommunen</a></li>
+            <li class="hidden-xs"><a href="index.html">{{_ "nav_start" }}</a></li>
+            <li><a href="#anehmer"><i class="apex-icon-gear"></i>{{_ "nav_employees" }}</a></li>
+            <li><a href="#ageber"><i class="apex-icon-gear"></i>{{_ "nav_employer" }}</a></li>
+            <li><a href="#kommunen"><i class="apex-icon-gear"></i>{{_ "nav_municipality" }}</a></li>
            <!-- <li><a href="#about"><i class="apex-icon-gear"></i>Arbeit mitnehmen</a></li>
             <li><a href="#team"><i class="apex-icon-members"></i>Partner</a></li>
            <li><a href="#produkte"><i class="apex-icon-speech-bubble-4"></i>Produkte</a></li>
             <li><a href="#projekte"><i class="apex-icon-polaroid-1"></i>Projekte</a></li>
             <li><a href="blog/"><i class="apex-icon-write"></i>Blog</a></li>-->
-            <li><a href="#contact"><i class="apex-icon-plane-2"></i>Kontakt</a></li>
+            <li><a href="#contact"><i class="apex-icon-plane-2"></i>{{_ "nav_contact" }}</a></li>
           </ul>
         </nav>
         
@@ -193,12 +192,10 @@
 		              </div>
 		
 		              <div class="col-sm-6 col-md-5 wow fadeIn" data-wow-delay=".25s">
-		              	<h1 class="light">Jobs4TakeAway.org - Arbeit zum Mitnehmen</h1>
-		                <h2 class="light">Oder: wie ortsunabhängige Arbeit die Gesellschaft verändert und dabei noch nachhaltig ist</h2>
-		                <p>Büroalltag war gestern! Eine Vielzahl von Büroarbeiten zahlreicher Berufe lassen sich heute schon ortsunabhängig organisieren. Ortsunabhähngig arbeiten, das bedeutet eine <b>Umkehr des Prinzips "Der Mensch folgt der Arbeit" zu "Die Arbeit folgt dem Menschen"</b>. Diese Umkehr, wie wir sie verstehen, führt zu vielfältigen Innovationen und nachhaltigen Entwicklungen im ökonomischen, ökologischen und sozialen Sinn.</p>
-		                <p>
-		                	Jobs4TakeAway.org vernetzt Arbeitgeber, Arbeitnehmer und Gemeinden und berät diese bei der Realisierung von Projekten zur Förderung ortsunabhängiger Arbeit. 
-		                </p>
+		              	<h1 class="light">{{{_ "page_headline"}}}</h1>
+		                <h2 class="light">{{{_ "page_intro1"}}}</h2>
+		                <p>{{{_ "page_intro2"}}}</p>
+		                <p>{{{_ "page_intro3"}}}</p>
 		               <!-- <p>&nbsp;</p>
 		                 <p><a href="#x" class="btn">Nachhaltigkeit</a></p>
 		                <p>&nbsp;</p>
@@ -244,49 +241,13 @@
 		            
 		
 		
-		              <div class="col-sm-7 col-md-6 wow fadeIn" data-wow-delay=".25s">
-		              	<h1 class="light">Für Arbeitnehmer</h1>
-		             <h2 class="light">Motivierter und effektiver arbeiten</h2>
-		                <p>Ortsunabhängige Arbeit ermöglicht es, längerfristig an einem Ort zu leben und zu arbeiten, ohne dabei umziehen zu müssen. Oder es kann bedeuten, dass trotz eines Umzuges die Tätigkeit von einem anderen Ort problemlos mitgenommen werden kann. Man kann z.B. mit der Familie im Heimatort leben und trotzdem einer hoch qualifizierten Arbeit nachgehen, die andernfalls einen Umzug erforderlich gemacht hätten. 
-		               </p>
-		               <p>Wir wissen aus Erfahrung, dass eine produktive Arbeit außerhalb des Firmenstandorts in vielen Berufen möglich ist und dass Kollegen/Kolleginnen und Mitarbeiter/innen in ausreichendem Maße in Kontakt bleiben können, ohne den Anschluss an das aktuelle Geschehen im Job zu verlieren. 
-		               </p>
+		             <div class="col-sm-7 col-md-6 wow fadeIn" data-wow-delay=".25s">
+			             <h1 class="light">{{{_ "section_employees_headline"}}}</h1>
+			             <h2 class="light">{{{_ "section_employees_intro"}}}</h2>
+			             				   {{{_ "section_employees_body"}}} 
+					 </div>
 
-		                <p>
-						<i><b>Wir ermutigen Arbeitnehmer und Arbeitgeber, gemeinschaftliche Arbeitsräume (z.B. Coworking Spaces) einer Arbeit im Home-Office vorzuziehen.</b></i>
-
-						Mehr Mitsprache bei der Gestaltung des Umfeldes, der Schnittstelle zu Kollegen, der Arbeitszeit und der Wahl des Arbeitsortes bedeutet eine Win-Win-Situation für Arbeitgeber und Arbeitnehmer. 
-						</p>
-						<p>
-						Ortsunabhängige Arbeit fördert eine ungezwungene und freie Arbeitsatmosphäre. Freundschaften entstehen im Kreise der neuen Kollegen am frei gewählten Arbeitsort. Die Einsparung von Arbeitswegen verringert den Stresspegel der ehemaligen Pendler, verringert die Entstehung von Depressionen und Burn-Outs. Mitarbeiter, die weniger pendeln, verfügen über mehr Energiereserven und eine größere Arbeitsmotivation, sind auf lange Sicht wacher und damit produktiver als gestresste Mitarbeiter oder Auftragnehmer.</p>
-						<p>
-							Zusätzlich fördert ortsunabhängige Arbeit familienfreundliche Strukturen: Kinderbetreuung am Arbeitsort bietet die Möglichkeit einer natürlichen Verbindung von Arbeit, Karriere und Familie.</p>
-		    
-		          
-			<b>Vorteile:</b>
-		    <ul class="features">
-                  <li>
-                    <i class="icon-ok"></i>Kein Umzug zur neuen Arbeitsstätte nötig
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Weniger Pendeln und Pendelverkehr 
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Wohnort quasi weltweit frei wählbar 
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Nie wieder Fernbeziehungen 
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Weniger Stress, weniger Mobbing, weniger Depressionen oder Burn-outs
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Arbeiten in moderner, motivierender, familienfreundlicher und kommunikativer Arbeitsumgebung
-                  </li>                
-                </ul>
-		              </div>
-
-		                            <div class="col-sm-6 col-md-5 col-md-offset-1 wow fadeIn">
+					 <div class="col-sm-6 col-md-5 col-md-offset-1 wow fadeIn">
 		                <p>
 		                	<!--<img class="aligncenter" src="assets/images/phone.png" alt="phone" width="414" height="283" data-color-switcher-path="assets/images/phone-%.png"> -->
 		                </p> 
@@ -327,38 +288,10 @@
 
 		
 		              <div class="col-sm-7 col-md-6 wow fadeIn" data-wow-delay=".25s">
-		              	<h1 class="light">Für Arbeitgeber</h1>
-		             <h2 class="light">Arbeiten von überall</h2>
-		                <p>
-		                	Unternehmen stärken ihre Attraktivität als Arbeitgeber, indem sie ihren Mitarbeitern einen ortsunabhängigen Arbeitsplatz und flexible Angebote offerieren. Der Einsatz schrittweiser, teilweiser oder voll verteilter Arbeit (engl. "distributed work" bzw. "remote work") bzw. ortsunabhäniger Organisationsmethoden bringt dem Unternehmen diverse Vorteile. 
-		                </p>
-<p>
-Durch ortsunabhängige Arbeit sparen Unternehmen Fixkosten wie Miete, Strom, Wasser und andere Verbrauchsmaterialien, selbst wenn sie die Raumkosten des Mitarbeiters übernehmen. Mit ortsunabhängiger Arbeit können Standortnachteile bei der Gewinnung von Fachkräften ausgeglichen werden. Bisher waren Unternehmen in benachteiligten Regionen meist auf Arbeitskräfte aus ihrer Umgebung angewiesen bzw. mussten Arbeitskräfte aus anderen Regionen/Ländern anwerben. Auch außerhalb von Ballungsräumen und in strukturschwachen Gegenden besteht Bedarf an hochqualifizierten Fachkräften. Ortsunabhängige Arbeit ermöglicht es potentiellen Mitarbeitern, am Standort eines Unternehmens zu arbeiten, ohne physisch präsent sein zu müssen.</p>
-<p>
-Alternative, natürlich auch auf Vertrauenskultur basierende, fluide Organisationsformen signalisieren potentiellen Mitarbeitern Offenheit und den Mut eines Unternehmens, neue Wege zu gehen. Dies kann einen echten Wettbewerbsvorteil für das Unternehmen bedeuten. Indem die Unternehmen mehr Mitsprache in der Gestaltung des Umfeldes, den Schnittstellen zu Kollegen, den Arbeitszeiten und der Wahl des Arbeitsortes ermöglichen, beeinflussen sie das Arbeitsklima positiv, steigern die Zufriedenheit und damit eine langfristige Bindung hochqualifizierter Arbeitskräfte. Diese Arbeitskräfte stehen nicht im Wettbewerb zueinander und agieren eher kooperativ bzw. positiv kompetitiv. Dies steigert die Arbeitsmotivation, das Arbeitsklima und die Produktivität des Einzelnen. Auch im Hinblick auf Bildung und Weiterbildung ergeben sich neue Möglichkeiten. Beispielsweise können Mitarbeiter einer Firma zeitweise in Coworking Spaces an anderen Orten arbeiten, um mit Menschen in Kontakt zu treten, die sich gegenseitig inspirieren und intensiv an einem Thema arbeiten. Auch bei zeitweiligen Aufenthalten im Ausland können die Mitarbeiter ihrer Arbeit weiterhin nachgehen und lernen gleichzeitig die Landessprache und eine andere Kultur kennen. Berufsbegleitende Weiterbildungen können so völlig neu definiert werden. Jobs4TakeAway.org berät auch an dieser Stelle mit Kompetenz und langjähriger Erfahrung.</p>
-		          
-<b>Vorteile:</b>
-		          <ul class="features">
-                  <li>
-                    <i class="icon-ok "></i>Steigerung der Attraktivität als Arbeitgeber 
-                  </li>
-                  <li>
-                    <i class="icon-ok "></i>Einsparung von Kosten 
-                  </li>
-                  <li>
-                    <i class="icon-ok "></i>Ausgleich von Standortnachteilen 
-                  </li>
-                  <li>
-                    <i class="icon-ok "></i>Höhere Motivation und Produktivität der Arbeitnehmer (geringere Fehlerrate, weniger Krankheitstage, weniger Fehlzeiten) 
-                  </li>
-                  <li>
-                    <i class="icon-ok "></i>Interessante Weiterbildungsmöglichkeiten
-                  </li>
-                  <li>
-                    <i class="icon-ok "></i>"Arbeitsurlaub" als zur Mitarbeiterförderung
-                  </li>                 
-                </ul>  
-		              
+
+						<h1 class="light">{{{_ "section_employer_headline"}}}</h1>
+						<h2 class="light">{{{_ "section_employer_intro"}}}</h2>
+						{{{_ "section_employer_body"}}}
 		              </div>
 		              		              <div class="col-sm-6 col-md-5 col-md-offset-1 wow fadeIn">
 		                <p>
@@ -400,33 +333,10 @@ Alternative, natürlich auch auf Vertrauenskultur basierende, fluide Organisatio
 		            
 
 		              <div class="col-sm-7 col-md-6 wow fadeIn" data-wow-delay=".25s">
-		              	<h1 class="light">Für Städte und Gemeinden</h1>
-		             <h2 class="light">Räume neu beleben</h2>
-		             <p>
-		               Im Zuge der Verbreitung ortsunabhängiger Arbeit verändern sich die Lebensstile sowohl auf dem Land als auch in der Stadt. Der Arbeitsort kann im höchsten Maße frei und flexibel gewählt werden. So kann beispielsweise ein Familienvater, der in einem ländlichen Gebiet lebt, dort in einem Coworking Space Arbeiten für seine städtische Firma erledigen, ohne pendeln oder mit der Familie in die Stadt umziehen zu müssen. Ein Mensch, der in der Stadt lebt und eine Auszeit vom hektischen Treiben der urbanen Umgebung braucht, kann seine Arbeit für eine Weile ebenso gut in einem Coworking Space in einer ländlichen Gegend durchführen.  Die Sozialstruktur, die Altersstruktur und der Ausbau von digitaler Infrastruktur auf dem Land werden durch eine ortsunabhängige Arbeitsweise positiv beeinflusst. Damit steigt die Attraktivität von Kleinstädten und Dörfern als Lebens- und Wohnraum.</p>
-<p>Für städtische Räume zeigen sich die Vorteile ortsunabhängiger Arbeit darin, dass auch sie qualifizierte Arbeitskräfte in der Region halten können, selbst wenn die Regionen eher strukturschwach sind. Durch den Wegfall von Umzügen, bleiben den Städten/Kommunen die Steuereinnahmen erhalten.</p>
-
-		          
-<b>Vorteile:</b>
-		      <ul class="features">
-                  <li>
-                    <i class="icon-ok"></i>Steigende Attraktivität von Kleinstädten und Dörfern 
-
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Wegzug aus Arbeitsgründen wird unnötig, Einwohnerzahlen und Steuereinnahmen steigen 
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Ausbau von digitaler Infrastruktur auf dem Land
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Flächendeckende Verteilung von hochqualifizierten Arbeitskräften 
-                  </li>
-                  <li>
-                    <i class="icon-ok"></i>Neuer, moderner Außenauftritt 
-                  </li>
-              </ul>
-		              
+		              	
+		              	<h1 class="light">{{{_ "section_municipality_headline"}}}</h1>
+		             	<h2 class="light">{{{_ "section_municipality_intro"}}}</h2>
+										  {{{_ "section_municipality_body"}}}
 		              </div>
 
 		             <div class="col-sm-6 col-md-5 col-md-offset-1 wow fadeIn">
@@ -469,30 +379,28 @@ Alternative, natürlich auch auf Vertrauenskultur basierende, fluide Organisatio
 		            
 
 		              <div class="col-sm-6 col-md-5 wow fadeIn" data-wow-delay=".25s">
-		              	<h1 class="light">Kontakt:</h1>
-		             <h2 class="light">Treten Sie mit uns in Verbindung</h2>
-		             <p>
-		            Wir sind überzeugt, dass es ökonomisch, ökologisch und sozial sinnvoll ist, sich rechtzeitig auf richtig konzipiertes "remote working" einzustellen.
-		             </p>
-		             <p>
-		             Wenn Sie Fragen oder Ideen zur Umsetzung haben oder Projekte diesbezüglich planen und erarbeiten, würden wir uns freuen Sie kennenzulernen. Kontaktieren Sie uns:</p>
-		              </div>
+		              	<h1 class="light"> {{{_ "contact_headline"}}}</h1>
+		             	<h2 class="light">{{{_ "contact_intro"}}}</h2>
 
-		              <div class="col-sm-6 col-md-5 col-md-offset-1 wow fadeIn">
-		               <br/>
-		             <b>Le Space UG (haftungsbeschränkt)</b><br/>
-			     Nico Krause<br>
-		             Lichtenberg 44<br/>
-		             D-84307 Eggenfelden<br/><br/>
+		             	<p> {{{_ "contact_body"}}}</p>
+		          
+		                <br/>
 
-		             Tel.: +49 / 87 21 / 12 89 60 00<br>
-		             <a href="http://www.le-space.de" target="_blank">www.le-space.de</a><br/>
-		             
-		             <a href="info ( a t ) le-space.de">info ( a t ) le-space.de</a>
+		                <h1 class="light"> {{{_ "imprint_headline"}}}</h1>
+		             	<h2 class="light">{{{_ "imprint_intro"}}}</h2>
+		             	<b>	Le Space UG (haftungsbeschränkt)</b><br/>
+		             		Geschäftsführer Nico Krause<br/>
+		             		Lichtenberg 44<br/>
+		            	 	D-84307 Eggenfelden<br/><br/>
+							Amtsgericht Leipzig HRB 25885 UStId Nr. DE 270240660<br/>
+		             		Tel.: +49 / 87 21 / 12 89 60 00-00<br>
+
+		             		<a href="http://www.le-space.de" target="_blank">www.le-space.de</a><br/>
+		            	 	<a href="info ( a t ) le-space.de">info ( a t ) le-space.de</a> 
 		              </div>
 		
 		              
-		            </div><!-- .row -->
+		            </div>
 		            
 		          </div><!-- .entry-content -->
 		          

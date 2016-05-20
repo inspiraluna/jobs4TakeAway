@@ -1,16 +1,31 @@
+getUserLanguage = function () {
+  // Put here the logic for determining the user language
+  var localeFromBrowser = window.navigator.userLanguage || window.navigator.language;
+  var locale = 'en';
+  if (localeFromBrowser.match(/de/)) {
+    locale = 'de';
+  }
+ // i18n.setLanguage(locale);
+ console.log('language:'+locale);
+  return locale;
+};
+
+if (Meteor.isClient) {
+  Meteor.startup(function () {
+
+	TAPi18n.setLanguage(getUserLanguage())
+	  .done(function () {
+	    // Session.set("showLoadingIndicator", false);
+	  })
+	  .fail(function (error_message) {
+	    // Handle the situation
+	    console.log(error_message);
+	  });
+	  
+  });
+}
+
 Template.body.rendered = function(){
-
-
-
-
-		// jQuery( document ).ready( function($) {
-			
-			// Setup strict mode
-			// (function() {
-		
-		    // "use strict";
-
-
 
 				/* --------------------------------------------------------- */
 				/* !Setup parallax elements */
@@ -73,17 +88,6 @@ Template.body.rendered = function(){
 				    });
 				  }
 				});
-			
-			// }());
-
-		// });
-		
-		// jQuery( window ).load( function() {
-		
-			// Setup strict mode
-			// (function() {
-		
-		    // "use strict";
 				
 	
 				/* --------------------------------------------------------- */
@@ -130,9 +134,6 @@ Template.body.rendered = function(){
 			  /* --------------------------------------------------------- */
 			  
 				jQuery( '.mtphr-slidegraph' ).mtphr_slidegraph();
-			
-			// }());
-	
-		// });
+
 	}
 		
